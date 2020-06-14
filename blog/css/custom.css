@@ -1,0 +1,211 @@
+
+.posts, .articles {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 10px;
+    overflow-x: hidden;
+
+}
+
+.posts .col {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: calc(33.3333% - 20px);
+    height: auto;
+    -ms-flex: 0 0 calc(33.3333% - 20px);
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex: 0 0 calc(33.3333% - 20px);
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+    margin: 0 10px 20px;
+}
+
+
+.posts .col a {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.card-img {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 270px !important;
+}
+
+
+.card-title, .card-body, .card-details {
+    text-align: right;
+    letter-spacing: -1px;
+    margin: 10px 15px 0 15px;
+    line-height: 31px;
+
+}
+
+.card-title {
+    padding: 5px 0;
+}
+
+.card-title h2 {
+    font-size: 17px;
+    color: #444;
+    font-weight: 400;
+}
+
+.card-body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.card-details {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    min-height: 55px;
+    color: #444;
+    letter-spacing: 0.1px;
+}
+
+.card-details .author-name, .card-details .date {
+    font-size: .9em;
+    color: #444444;
+}
+
+
+.post-title {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.post-title h1 {
+    color: #6b7074;
+}
+
+.like:before {
+    content: '\e08c';
+    color: #ff4e61;
+    font-size: 23px;
+}
+
+.like.is-active:before {
+    content: '\e08b';
+    color: #ff4e61;
+}
+
+
+.post-details {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6b7074;
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.post-author {
+    margin-left: 40px;
+    white-space: nowrap;
+}
+
+.post-date {
+    white-space: nowrap;
+
+}
+
+.post-img {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.post-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.post-content p {
+    color: #6b7074;
+    line-height: 32px;
+    margin: 32px 0;
+    /*text-align: justify;*/
+}
+
+.post-content a {
+    color: #46b2f0;
+}
+
+#single .article {
+    background: #fff;
+    padding: 2em;
+    margin-bottom: 30px;
+}
+
+#single .article .line {
+    margin: 2% 0 !important;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+
+
+.dark-mode #single .article {
+    background: #212d39 !important;
+}
+
+.dark-mode #single .post-details {
+    color: #d1d1d2 !important;
+    background: #212d39 !important;
+}

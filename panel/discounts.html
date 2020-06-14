@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <title>Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive_991.css" media="(max-width:991px)">
+    <link rel="stylesheet" href="css/responsive_768.css" media="(max-width:768px)">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+<div class="sidebar__nav border-top border-left  ">
+    <span class="bars d-none padding-0-18"></span>
+    <a class="header__logo  d-none" href="https://webamooz.net"></a>
+    <div class="profile__info border cursor-pointer text-center">
+        <div class="avatar__img"><img src="img/pro.jpg" class="avatar___img">
+            <input type="file" accept="image/*" class="hidden avatar-img__input">
+            <div class="v-dialog__container" style="display: block;"></div>
+            <div class="box__camera default__avatar"></div>
+        </div>
+        <span class="profile__name">کاربر : محمد نیکو</span>
+    </div>
+
+    <ul>
+        <li class="item-li i-dashboard "><a href="index.html">پیشخوان</a></li>
+        <li class="item-li i-courses"><a href="courses.html">دوره ها</a></li>
+        <li class="item-li i-users"><a href="users.html"> کاربران</a></li>
+        <li class="item-li i-categories "><a href="categories.html">دسته بندی ها</a></li>
+        <li class="item-li i-slideshow"><a href="slideshow.html">اسلایدشو</a></li>
+        <li class="item-li i-banners"><a href="banners.html">بنر ها</a></li>
+        <li class="item-li i-articles"><a href="articles.html">مقالات</a></li>
+        <li class="item-li i-ads"><a href="ads.html">تبلیغات</a></li>
+        <li class="item-li i-comments"><a href="comments.html"> نظرات</a></li>
+        <li class="item-li i-tickets"><a href="tickets.html"> تیکت ها</a></li>
+        <li class="item-li i-discounts is-active"><a href="discounts.html">تخفیف ها</a></li>
+        <li class="item-li i-transactions"><a href="transactions.html">تراکنش ها</a></li>
+        <li class="item-li i-checkouts"><a href="checkouts.html">تسویه حساب ها</a></li>
+        <li class="item-li i-checkout__request "><a href="checkout-request.html">درخواست تسویه </a></li>
+        <li class="item-li i-my__purchases"><a href="mypurchases.html">خرید های من</a></li>
+        <li class="item-li i-my__peyments"><a href="mypeyments.html">پرداخت های من</a></li>
+        <li class="item-li i-notification__management"><a href="notification-management.html">مدیریت اطلاع رسانی</a>
+        </li>
+        <li class="item-li i-user__inforamtion"><a href="user-information.html">اطلاعات کاربری</a></li>
+    </ul>
+
+</div>
+<div class="content">
+    <div class="header d-flex item-center bg-white width-100 border-bottom padding-12-30">
+        <div class="header__right d-flex flex-grow-1 item-center">
+            <span class="bars"></span>
+            <a class="header__logo" href="https://webamooz.net"></a>
+        </div>
+        <div class="header__left d-flex flex-end item-center margin-top-2">
+            <span class="account-balance font-size-12">موجودی : 2500,000 تومان</span>
+            <div class="notification margin-15">
+                <a class="notification__icon"></a>
+                <div class="dropdown__notification">
+                    <div class="content__notification">
+                        <span class="font-size-13">موردی برای نمایش وجود ندارد</span>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="logout" title="خروج"></a>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="index.html">پیشخوان</a></li>
+            <li><a href="discounts.html" class="is-active">تخفیف ها</a></li>
+        </ul>
+    </div>
+    <div class="main-content padding-0 discounts">
+        <div class="row no-gutters  ">
+            <div class="col-8 margin-left-10 margin-bottom-15 border-radius-3">
+                <p class="box__title">دسته بندی ها</p>
+                <div class="table__box">
+                    <div class="table-box">
+                        <table class="table">
+                            <thead role="rowgroup">
+                            <tr role="row" class="title-row">
+                                <th>شناسه</th>
+                                <th>درصد</th>
+                                <th>محدودیت زمانی</th>
+                                <th>توضیحات</th>
+                                <th>استفاده شده</th>
+                                <th>عملیات</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr role="row" class="">
+                                <td><a href="">1</a></td>
+                                <td><a href="">50%</a></td>
+                                <td>2 ساعت دیگر</td>
+                                <td>مناسبت عید نوروز</td>
+                                <td>0 نفر</td>
+                                <td>
+                                    <a href="" class="item-delete mlg-15"></a>
+                                    <a href="edit-discount.html" class="item-edit " title="ویرایش"></a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 bg-white">
+                <p class="box__title">ایجاد تخفیف جدید</p>
+                <form action="" method="post" class="padding-30">
+                    <input type="text" placeholder="درسد تخفیف" class="text">
+                    <input type="text" placeholder="محدودیت افراد" class="text">
+                    <input type="text" placeholder="محدودیت زمانی به ساعت" class="text">
+                    <p class="box__title">این تخفیف برای</p>
+                    <div class="notificationGroup">
+                        <input id="discounts-field-1" class="discounts-field-pn" name="discounts-field" type="radio"/>
+                        <label for="discounts-field-1">همه دوره ها</label>
+                    </div>
+                    <div class="notificationGroup">
+                        <input id="discounts-field-2" class="discounts-field-pn" name="discounts-field" type="radio"/>
+                        <label for="discounts-field-2">دوره خاص</label>
+                    </div>
+                    <select name="">
+                        <option value="0">انتخاب دوره</option>
+                        <option value="1">دوره لاراول</option>
+                        <option value="2">دوره ری اکت</option>
+                        <option value="3">دوره جی اس</option>
+                    </select>
+                    <input type="text" placeholder="لینک اطلاعات بیشتر" class="text">
+                    <input type="text" placeholder="توضیحات" class="text margin-bottom-15">
+
+                    <button class="btn btn-webamooz_net">اضافه کردن</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/tagsInput.js"></script>
+</html>
