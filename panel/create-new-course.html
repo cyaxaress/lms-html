@@ -68,7 +68,7 @@
         <ul>
             <li><a href="index.html" title="پیشخوان">پیشخوان</a></li>
             <li><a href="courses.html" title=" دوره ها"> دوره ها</a></li>
-            <li><a href="create-new-course.html"  class="is-active" title="ایجاد دوره جدید">ایجاد دوره جدید</a></li>
+            <li><a href="create-new-course.html" class="is-active" title="ایجاد دوره جدید">ایجاد دوره جدید</a></li>
         </ul>
     </div>
     <div class="main-content padding-0">
@@ -89,10 +89,14 @@
                         <option value="1">محمد نیکو</option>
                         <option value="2">صیاد اعظمی</option>
                     </select>
+                    <ul class="tags">
 
-                    <ul class="tags-input-ul">
-                        <li class="tags-new">
-                            <input type="text" class="" placeholder="برچسب ها">
+                        <li class="addedTag">dsfsdf<span class="tagRemove" onclick="$(this).parent().remove();">x</span>
+                            <input type="hidden" value="dsfsdf" name="tags[]"></li>
+                        <li class="addedTag">dsfsdf<span class="tagRemove" onclick="$(this).parent().remove();">x</span>
+                            <input type="hidden" value="dsfsdf" name="tags[]"></li>
+                        <li class="tagAdd taglist">
+                            <input type="text" id="search-field">
                         </li>
                     </ul>
                     <select name="">

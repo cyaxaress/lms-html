@@ -79,12 +79,16 @@
                     <input type="text" class="text" placeholder="عنوان مقاله">
                     <input type="text" class="text text-left " placeholder="نام انگلیسی مقاله">
 
-                    <ul class="tags-input-ul">
-                        <li class="tags-new">
-                            <input type="text" class="" placeholder="برچسب ها">
+                    <ul class="tags">
+
+                        <li class="addedTag">dsfsdf<span class="tagRemove" onclick="$(this).parent().remove();">x</span>
+                            <input type="hidden" value="dsfsdf" name="tags[]"></li>
+                        <li class="addedTag">dsfsdf<span class="tagRemove" onclick="$(this).parent().remove();">x</span>
+                            <input type="hidden" value="dsfsdf" name="tags[]"></li>
+                        <li class="tagAdd taglist">
+                            <input type="text" id="search-field">
                         </li>
                     </ul>
-
 
                     <div class="file-upload">
                         <div class="i-file-upload">
