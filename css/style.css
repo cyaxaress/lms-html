@@ -3050,8 +3050,7 @@ footer {
 
 @media (max-width: 1152px) {
     .posts .col {
-        width: calc(33.33% - 20px);
-    !important;
+        width: calc(33.33% - 20px) !important;
         -ms-flex: 0 0 calc(33.33% - 20px);
         -webkit-box-flex: 0;
         -ms-flex-positive: 0;
